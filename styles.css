@@ -1,0 +1,38 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrocel.css");
+@import url("styles/topicos_recentes.css");
+@import url("styles/email.css");
+@import url("styles/grupo_alura.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #EBECEE;
+    --branco: #fff;
+    --laranja: #EB9B00;
+    --azul_degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul: #002F52;
+    --preto: #000;
+    --cinza: #858585;
+    --cinza_forte: #474646;
+    
+    --font_geral: 'Poppins',sans-serif;
+    --font_josefin: 'Josefin', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font_geral);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.super_footer {
+    background: var(--branco);
+}
+
+

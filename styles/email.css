@@ -1,0 +1,80 @@
+.cadastro_email {
+    margin: 1em 0;
+    padding: 1em;
+}
+.cadastro_email_texto, .cadastro_email_title {
+    background: var(--azul_degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+.cadastro_email_title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cadastro_email_texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.email_cadastro {
+    color: var(--azul_degrade);
+    background: transparent;
+    border-color: var(--azul_degrade);
+    width: 90%;
+    color: var(--azul);
+   
+}
+
+.email_cadastro::placeholder {
+    background: url("../img/letter.svg") no-repeat;
+    background-position: 3%;
+    color: var(--azul_degrade);
+    padding-right: 7em;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .cadastro_email {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        padding: 1em 8em;
+    }
+
+    .email {
+        width: 50%;
+    }
+
+    .cadastro_email_title {
+        font-size: 24px;
+    }
+
+    .email_cadastro {
+        width: 35%;
+        height: 10px ;
+    }
+
+    .email_cadastro::placeholder {
+        padding-right: 3em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cadastro_email {
+        gap: 0;
+        padding: 3em 25em;
+    }
+
+    .cadastro_email_texto {
+        width: 65%;
+    }
+
+    .email_cadastro {
+        height: 1em;
+    }
+}

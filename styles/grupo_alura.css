@@ -1,0 +1,64 @@
+hr {
+    margin: 0;
+}
+
+.grupo_alura_lista {
+    display: none;
+}
+
+.grupo_alura_texte {
+    padding: 1em ;
+    color: var(--azul);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .grupo_alura {
+        padding: 3em 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grupo_alura_texte {
+        padding: 0;
+        font-size: 24px;
+        color: var(--preto)
+    }
+
+    .grupo_alura_lista{
+        display: block;
+        font-size: 14px;
+        color: var(--cinza);
+
+    }
+
+    .grupo_alura_lista_title {
+        padding-bottom: 1.5em;
+    }
+    
+    .grupo_alura_lista_item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    .grupo_alura_img {
+        padding-right: 0.5em;
+    }
+
+    .grupo_alura_link {
+        text-decoration: none;
+        color: var(--cinza_forte);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .grupo_alura_lista {
+        border-left: 0.5px solid var(--preto);
+        padding-left: 1em;
+    }
+
+    .grupo_alura_lista_item:hover>.grupo_alura_link {
+        color: var(--laranja);
+    }
+}
